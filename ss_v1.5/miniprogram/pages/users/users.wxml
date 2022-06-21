@@ -1,0 +1,29 @@
+<view class="all">
+<view class="card" style="position: absolute; width: 674rpx; height: 302rpx; display: block; box-sizing: border-box; opacity: {{0.7}}; left: -4rpx; top: 58rpx">
+<text style="position: absolute; left: 113rpx; top: 38rpx">当前步数：</text>
+<text class="zm1" style="position: absolute; left: 113rpx; top: 106rpx; width: 465rpx; height: 61rpx; display: block; box-sizing: border-box" >输入目标：</text> 
+<text class="data" style="position: absolute; left: 272rpx; top: 38rpx; width: 465rpx; height: 61rpx; display: block; box-sizing: border-box" >{{step}}</text> 
+
+<input  bindinput="Input" class="weui-input" style="position: absolute; left: 294rpx; top: 106rpx; width: 308rpx; height: 60rpx; display: flex; box-sizing: border-box" auto-focus placeholder="想想今天要跑多远吧"/>
+<button class="but" bindtap="button" style="position: relative; left: 8rpx; top: 194rpx; width: 236rpx; height: 60rpx; display: block; box-sizing: border-box" plain="true">确认</button>
+</view>
+
+<view style="position: absolute; width:150rpx ;left: 650rpx; top: 58rpx">
+<text style="position: absolute;width:150rpx"wx:if="{{step<des*0.5}}">加油！</text>
+<text style="position: absolute;"wx:elif="{{step>des*0.5&&step<des}}">就快成功了</text>
+<text style="position: absolute;width:150rpx;"wx:elif="{{step>des}}">达成目标！！</text>
+</view>
+
+
+<view class="card" style="position: absolute; width: 674rpx; height: 502rpx; display: block; box-sizing: border-box; opacity: {{0.7}}; left: -4rpx; top: 444rpx">
+
+  <input  bindinput="InputWeight" class="weui-input" style="position: absolute; left: 236rpx; top: 22rpx; width: 308rpx; height: 60rpx; display: flex; box-sizing: border-box" auto-focus placeholder="输入你的体重(kg)"/>
+<button class="but" bindtap="button1" style="position: relative; left: 2rpx; top: 142rpx; width: 206rpx; height: 60rpx; display: block; box-sizing: border-box" plain="true">确认</button>
+<text style="position: absolute; left: 92rpx; top: 260rpx">今日预计消耗卡路里：{{0.6*des*1.036*weight/1000}}千卡</text>
+<text style="position: absolute; left: 92rpx; top: 376rpx">今日已经消耗卡路里：{{0.6*step*1.036*weight/1000}} 千卡</text>
+</view>
+<button class="but" bindtap="res" style="position: relative; left: -191rpx; top: 1010rpx; width: 206rpx; height: 60rpx; display: block; box-sizing: border-box" plain="true">提交</button>
+<button class="but" bindtap="res1" style="position: relative; left: 168rpx; top: 954rpx; width: 244rpx; height: 57rpx; display: block; box-sizing: border-box" plain="true">更新数据</button>
+<text style="position: absolute; left: 34rpx; top: 17rpx">今日目标:{{des}}步数</text>
+<text style="position: absolute; left: 371rpx; top: 17rpx">体重:{{weight}}kg</text>
+</view>

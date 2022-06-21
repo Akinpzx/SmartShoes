@@ -1,0 +1,33 @@
+/* pages/users/users.wxss */
+.card{
+  display:flex;
+  width: 90%;
+  margin-left: 5%;
+  height: 390rpx;
+  background: rgb(228, 124, 27);
+  border-radius: 10rpx;
+  box-shadow: 5px 5px 5px #ca8114;
+}
+.weui-input{
+display:flex;
+}
+.all{
+  background-image: url(https://pic.imgdb.cn/item/62ad7a200947543129b7df2b.jpg);
+  background-size: 100% 100%;
+  padding-bottom: 1150rpx;
+ }
+ .data{
+  position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+  left: 30rpx; /* 靠右调节 */
+  color: #000000;
+  font-style: italic;
+  font-weight: 900;
+  font-size: large;
+}
+.but{
+  
+  height: 70rpx;
+    line-height: 20rpx;
+    width: 300rpx;
+    background-color: lightcoral;
+}

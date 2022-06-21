@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home",
+    "pages/index1/index1",
+    "pages/index/index",
+    "pages/users/users"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E19955",
+    "navigationBarTitleText": "SmartShoes",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于天气预报定位"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#2d4059",
+    "selectedColor": "#00adb5",
+    "borderStyle": "white",
+    "backgroundColor": "#F69A29",
+    "list": [
+      {
+        "selectedIconPath": "images/运动 1.png",
+        "iconPath": "images/运动.png",
+        "pagePath": "pages/index1/index1",
+        "text": "运动"
+      },
+      {
+        "selectedIconPath": "images/天气 1.png",
+        "iconPath": "images/天气.png",
+        "pagePath": "pages/index/index",
+        "text": "天气"
+      },
+      {
+        "selectedIconPath": "images/个人信息1.png",
+        "iconPath": "images/个人信息.png",
+        "pagePath": "pages/users/users",
+        "text": "个人信息"
+      }
+    ]
+  }
+}

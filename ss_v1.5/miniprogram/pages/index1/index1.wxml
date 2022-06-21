@@ -1,0 +1,37 @@
+<!--pages/index/index.wxml-->
+
+<view class="whole">
+
+<view class="card" style="width: 674rpx; height: 327rpx; display: block; box-sizing: border-box;opacity:{{0.7}}">
+<text class="zm1" style=" position: absolute; left: 191rpx; top: 135rpx; width: 465rpx; height: 61rpx; display: block; box-sizing: border-box" >前方障碍物距离：</text> 
+
+<text class="data" style="position: absolute; left: 444rpx; top: 134rpx; width: 465rpx; height: 61rpx; display: block; box-sizing: border-box" >{{distance}}cm</text> 
+
+</view>
+
+<text style="width: 750rpx; height: 115rpx; display: block; box-sizing: border-box">\n \n \n</text>
+
+<view class="card"  style="width: 674rpx; height: 578rpx; display: block; box-sizing: border-box;opacity:{{0.7}}">
+     <view style="flex:1;width:100%">
+       <label class="xia">
+       <text class="zm1" style="position: absolute; left: 256rpx; top: 606rpx">当前温度：</text>
+       <text class="data" style="position: absolute; left: 401rpx; top: 606rpx">{{wendu}}°C</text>
+       </label>
+     </view>
+     
+     <view style="flex:1;width:100%">
+        <label class="xia">
+         <text class="zm1" style="position: absolute; left: 250rpx; top: 651rpx">\n当前湿度：</text>
+         <text class="data" style="position: absolute; left: 395rpx; top: 689rpx">{{shidu}} %</text>
+        </label>
+     </view>
+      <text>\n \n</text>
+        <button class="login-btn" bindtap="points"  style="width: 279rpx; height: 87rpx; display: block; box-sizing: border-box; left: 1rpx; top: 290rpx; position: relative" plain="true">SHOW</button>   
+  </view>  
+
+
+
+</view>
+
+
+

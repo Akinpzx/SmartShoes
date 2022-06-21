@@ -1,0 +1,121 @@
+/* pages/index/index.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.headTitle{
+   width: 100%;
+   height: 80rpx;
+   background-color: #ffffff;
+   overflow:hidden  ;/** 设置超出内容隐藏 */
+   white-space:nowrap;   /*设置超出不换行 */
+   border-bottom :1px solid #F3F3F3;
+}
+.headTitle .titleItem{
+  display: inline-block;
+  line-height:80rpx;
+  color: #889999;
+  font-size:34rpx;
+  margin: 0 20rpx;
+}
+.headTitle .selctItem{
+  color: #000000;
+  font-weight: bold;
+}
+.itemView{
+  width: 100%;
+  height:180rpx;
+  position: relative;
+  border-bottom: 1px solid #F3F3F3;
+}
+.zm{
+  margin-top: 20rpx;
+  border:1px solid#ebe4e286;
+  width:750rpx;
+  height: 100rpx;
+  border-radius: 5px;
+  font-size: 36;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: #32d5e0;
+  text-align: center;
+  display: flex;
+  position: relative;/*父元素位置要设置为相对*/
+
+}
+.login-btn{
+  width: 40%!important;
+  background-color: #8baf38;
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+}
+.content{
+  margin-top: 20rpx;
+  border:1px solid#ebe4e286;
+  width:750rpx;
+  height: 600rpx;
+  border-radius: 5px;
+  font-size: 36;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: #32d5e0;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+
+}
+.xia{
+  justify-content: space-between;
+}
+.zm1{
+  position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+  left: 30rpx; /* 靠右调节 */
+  color: #000000;
+  
+ 
+}
+.data{
+  position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+  left: 30rpx; /* 靠右调节 */
+  color: #000000;
+  font-style: italic;
+  font-weight: 900;
+  font-size: large;
+}
+.radio{
+  display:inline-block; /*  横向布局*/
+
+}
+.kai{
+
+  position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+  right: 100rpx; /* 靠右调节 */
+  
+}
+.mos{
+ 
+  left: 120rpx; /* 靠右调节 */
+  height: 200rpx;
+}
+
+.card{
+  width: 90%;
+  margin-left: 5%;
+  height: 390rpx;
+  background: rgb(228, 124, 27);
+  border-radius: 10rpx;
+  box-shadow: 5px 5px 5px #ca8114;
+  
+ }
+ .whole{
+  background-image: url(https://pic.imgdb.cn/item/62ad421309475431296bebc1.jpg);
+  background-size: 100% 100%;
+  padding-bottom: 110rpx;
+ }
+ 
+ 
+ 
+ 
+ 
